@@ -96,7 +96,7 @@ border-radius:6px;
 cursor:pointer;
 transition:0.3s;
 }
-
+.body{}
 button:hover{
 background:#444;
 }
