@@ -1,5 +1,5 @@
 body { 
-    background-image: linear-gradient(to bottom, #1a0a0a 0%, #641313b6 50%, #2f197c 100%);
+    background-image: linear-gradient(to bottom, #1a0a0a 0%, #311212 50%, #2f197c 100%);
     margin: 0;
     min-height: 100vh;
 }
@@ -50,7 +50,7 @@ h1 {
 .about{
     font-family: Cambria, serif;
     color: whitesmoke;
-    font-size:20px;
+    font-size:35px;
     
 }
 h2{
@@ -61,18 +61,37 @@ h2{
 }
 .card{
     font-family: Cambria, serif;
-    font-size:20px;
+    font-size:35px;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 10px auto;
     align-items: center;
-    padding: 50px;
-    width:51%;
+    padding: 30px;
+    width:35%;
     background-color: white;
-box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-border-radius: 12px;
- align:center;
-    
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    align:center;
+    display:flex;
+    flex-direction: column;
+    transition: 0.5s; 
 }
-
+.card:hover{
+    transform: scale(1.05);
+}
+.card img{
+    width: 80%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.grid{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.footer{
+    font-family: cinzel, serif;
+    color: whitesmoke;
+    font-size:20px;
+}
 
 
