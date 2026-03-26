@@ -1,24 +1,27 @@
-
-/* --- CSS --- */
-
 body { 
     background-image: linear-gradient(to bottom, #1a0a0a 0%, #311212 50%, #2f197c 100%);
     margin: 0;
     min-height: 100vh;
 }
 
-h1 {
-    width: 100%; 
-    font-family: 'Cinzel', serif;
-    color: bisque;
-    font-size: 50px;
-    text-align: center; 
+/* Estilo para a imagem de banner se adaptar à tela */
+.banner-topo {
+    width: 100%;
+    overflow: hidden;
 }
-.about{
+
+.banner-topo img {
+    width: 100%;
+    height: auto;
+    display: block; /* Tira espacamento fantasma embaixo da imagem */
+}
+
+.about {
     font-family: Cambria, serif;
     color: whitesmoke;
     font-size: 35px;
     text-align: center;
+    padding: 20px;
 }
 
 h2 {
@@ -30,7 +33,7 @@ h2 {
 
 .card {
     font-family: Cambria, serif;
-    font-size: 25px; /* Reduzi um pouco para não quebrar o layout do texto */
+    font-size: 25px;
     text-align: center;
     margin: 10px auto;
     align-items: center;
@@ -59,11 +62,12 @@ h2 {
     justify-content: center;
     gap: 20px;
 }
+
 footer {
-  text-align: center;
-  padding: 20px; 
-  font-size: 30px;
-  color: aliceblue;
+    text-align: center;
+    padding: 20px; 
+    font-size: 30px;
+    color: aliceblue;
 }
 
 footer a {
