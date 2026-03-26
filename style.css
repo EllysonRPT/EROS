@@ -14,8 +14,7 @@ h1 {
     font-size: 50px;
     text-align: center; 
 }
-
-.about {
+.about{
     font-family: Cambria, serif;
     color: whitesmoke;
     font-size: 35px;
@@ -60,16 +59,14 @@ h2 {
     justify-content: center;
     gap: 20px;
 }
-
-footer { /* Corrigido de .footer para footer */
-    font-family: 'Cinzel', serif;
-    color: whitesmoke;
-    font-size: 20px;
-    text-align: center;
-    padding: 20px;
+footer {
+  text-align: center;
+  padding: 20px; 
+  font-size: 30px;
+  color: aliceblue;
 }
 
 footer a {
-    color: bisque;
+    color: rgb(196, 254, 255);
     text-decoration: none;
 }
