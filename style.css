@@ -5,8 +5,8 @@ body {
 }
 .botao-eua {
     display: inline-block;
-    width: 40px;  /* Ajuste o tamanho como preferir */
-    height: 40px;
+    width: 35px;  /* Ajuste o tamanho como preferir */
+    height: 35px;
     
     background-image: url('img/botãoEUA.png'); 
     background-size: cover;
@@ -16,7 +16,7 @@ body {
     text-indent: -9999px; 
     overflow: hidden;
     
-    border: 1px solid #ddd;
+    border: 0px solid #ddd;
     transition: 0.3s;
 }
 
