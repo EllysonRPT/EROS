@@ -5,7 +5,7 @@ body {
 }
 .botao-eua {
     display: inline-block;
-    width: 35px;  /* Ajuste o tamanho como preferir */
+    width: 65px;  /* Ajuste o tamanho como preferir */
     height: 35px;
     
     background-image: url('img/botãoEUA.png'); 
