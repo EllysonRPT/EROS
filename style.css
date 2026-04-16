@@ -16,6 +16,19 @@ body {
     text-indent: -9999px; 
     overflow: hidden;
     transition: 0.3s;
+}.botao-br {
+    display: inline-block;
+    width: 65px;  /* Ajuste o tamanho como preferir */
+    height: 35px;
+    
+    background-image: url('img/brasil.png'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; 
+    
+    text-indent: -9999px; 
+    overflow: hidden;
+    transition: 0.3s;
 }
 
 .botao-eua:hover {
