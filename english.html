@@ -6,94 +6,319 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ErosCorp | The Art of Seduction</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<header>
-  <a href="index.HTML" class="botao-br" title="">
-    English
-    <img src="img/BotãoBR.png" alt="">
-  </a>
-</header>
-<div class="banner-topo">
-    <img src="img/img do banner em ingles.jpeg" alt="ErosCorp - Elegância em cada gota">
-</div>
 
-<section class="about">
+  <!-- ── HEADER ── -->
+  <header>
+    <a href="index.html" class="botao-br" title="">
+      Português
+      <img src="img/BotãoBR.png" alt="">
+    </a>
+  </header>
+
+  <!-- ── BANNER ── -->
+  <div class="banner-topo">
+    <img src="img/BannerBR new.png" alt="ErosCorp - Elegance in every drop">
+  </div>
+
+  <!-- ── ABOUT ── -->
+  <section class="about">
     <h2>About ErosCorp</h2>
     <p>
-        ErosCorp is a Greek perfume company inspired by mythology and Mediterranean tradition.
-Its name refers to Eros, the god of love,
-a symbol of passion, beauty, and desire, elements that directly influence the brand's identity. ErosCorp stands out for its use of natural raw materials and its appreciation of artisanal tradition, combined with modern production technology.
-Its products are aimed at both men and women,
-with lines that range from fresh, intense, and sensual fragrances.he art of seduction,
-        designed to convey elegance, personality, and presence.
+      ErosCorp is a Greek perfumery company inspired by mythology and the Mediterranean tradition.
+      Its name references Eros, the god of love —
+      a symbol of passion, beauty and desire — elements that directly shape the brand's identity.
+      ErosCorp stands out for its use of natural raw materials and its appreciation of artisan tradition,
+      combined with modern production technology.
+      Its products are designed for both men and women,
+      with lines ranging from fresh and intense to deeply sensual fragrances.
     </p>
-</section>
+  </section>
 
-<section class="catalog female-section">
+  <!-- ══════════════════════════════════════════
+       INFOGRAPHIC — PERFUME TYPES
+  ══════════════════════════════════════════ -->
+  <div class="infographic">
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header-eyebrow">Complete Guide</div>
+      <h1>Types of</h1>
+      <h2>Perfume</h2>
+      <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line"></div>
+      </div>
+      <div class="header-subtitle">
+        Understand the main concentrations<br>
+        and choose the right one for you
+      </div>
+    </div>
+
+    <!-- TABLE HEADER -->
+    <div class="table-header">
+      <div class="col-label">Type</div>
+      <div class="col-label">Oil<br>Concentration</div>
+      <div class="col-label">Skin<br>Duration</div>
+      <div class="col-label">Characteristics</div>
+      <div class="col-label">Best For</div>
+    </div>
+
+    <!-- PERFUME ROWS -->
+    <div class="perfume-rows">
+
+      <!-- PARFUM -->
+      <div class="perfume-row row-parfum">
+        <div class="type-cell">
+          <div class="bottle-icon">🫙</div>
+          <div>
+            <div class="type-name">Parfum</div>
+            <div class="type-abbr">Extrait de Parfum</div>
+          </div>
+        </div>
+        <div class="concentration-cell">
+          <div class="conc-value">20–40%</div>
+          <div class="dots">
+            <div class="dot filled"></div><div class="dot filled"></div>
+            <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
+          </div>
+        </div>
+        <div class="duration-cell">
+          <div class="duration-value">8 to 12</div>
+          <div class="duration-unit">hours</div>
+          <div class="clock-icon">🕐</div>
+        </div>
+        <div class="char-cell">The most intense and sophisticated. Rich, deep notes with long-lasting sillage.</div>
+        <div class="ideal-cell">Special occasions, evenings, cold climates, and those seeking maximum longevity.</div>
+      </div>
+
+      <!-- EAU DE PARFUM -->
+      <div class="perfume-row row-edp">
+        <div class="type-cell">
+          <div class="bottle-icon">🧴</div>
+          <div>
+            <div class="type-name">Eau de<br>Parfum</div>
+            <div class="type-abbr">EDP</div>
+          </div>
+        </div>
+        <div class="concentration-cell">
+          <div class="conc-value">15–20%</div>
+          <div class="dots">
+            <div class="dot filled"></div><div class="dot filled"></div>
+            <div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div>
+          </div>
+        </div>
+        <div class="duration-cell">
+          <div class="duration-value">6 to 8</div>
+          <div class="duration-unit">hours</div>
+          <div class="clock-icon">🕑</div>
+        </div>
+        <div class="char-cell">Perfect balance between intensity, longevity, and sophistication. Versatile for many occasions.</div>
+        <div class="ideal-cell">Daily use, work, dates, and various occasions.</div>
+      </div>
+
+      <!-- EAU DE TOILETTE -->
+      <div class="perfume-row row-edt">
+        <div class="type-cell">
+          <div class="bottle-icon">🪷</div>
+          <div>
+            <div class="type-name">Eau de<br>Toilette</div>
+            <div class="type-abbr">EDT</div>
+          </div>
+        </div>
+        <div class="concentration-cell">
+          <div class="conc-value">5–15%</div>
+          <div class="dots">
+            <div class="dot filled"></div><div class="dot filled"></div>
+            <div class="dot filled"></div><div class="dot"></div><div class="dot"></div>
+          </div>
+        </div>
+        <div class="duration-cell">
+          <div class="duration-value">3 to 5</div>
+          <div class="duration-unit">hours</div>
+          <div class="clock-icon">🕒</div>
+        </div>
+        <div class="char-cell">Lighter and fresher, ideal for everyday wear. Citrus and floral notes take the spotlight.</div>
+        <div class="ideal-cell">Everyday use, warm climates, office environments.</div>
+      </div>
+
+      <!-- EAU DE COLOGNE -->
+      <div class="perfume-row row-edc">
+        <div class="type-cell">
+          <div class="bottle-icon">🌿</div>
+          <div>
+            <div class="type-name">Eau de<br>Cologne</div>
+            <div class="type-abbr">EDC</div>
+          </div>
+        </div>
+        <div class="concentration-cell">
+          <div class="conc-value">2–5%</div>
+          <div class="dots">
+            <div class="dot filled"></div><div class="dot filled"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+          </div>
+        </div>
+        <div class="duration-cell">
+          <div class="duration-value">2 to 3</div>
+          <div class="duration-unit">hours</div>
+          <div class="clock-icon">🕓</div>
+        </div>
+        <div class="char-cell">Very light and refreshing, perfect for an immediate sensation of cleanliness and freshness.</div>
+        <div class="ideal-cell">Post-shower, very hot days, casual settings.</div>
+      </div>
+
+      <!-- EAU FRAÎCHE -->
+      <div class="perfume-row row-fraiche">
+        <div class="type-cell">
+          <div class="bottle-icon">💧</div>
+          <div>
+            <div class="type-name">Eau<br>Fraîche</div>
+            <div class="type-abbr">Eau Fraîche</div>
+          </div>
+        </div>
+        <div class="concentration-cell">
+          <div class="conc-value">1–3%</div>
+          <div class="dots">
+            <div class="dot filled"></div><div class="dot"></div>
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+          </div>
+        </div>
+        <div class="duration-cell">
+          <div class="duration-value">1 to 2</div>
+          <div class="duration-unit">hours</div>
+          <div class="clock-icon">🕔</div>
+        </div>
+        <div class="char-cell">Maximum lightness — more water than essence. Instant, fleeting refreshing sensation.</div>
+        <div class="ideal-cell">Extreme heat, sports, relaxation moments.</div>
+      </div>
+
+    </div><!-- /perfume-rows -->
+
+    <!-- BOTTOM CARDS -->
+    <div class="bottom-grid">
+
+      <!-- Longevity Factors -->
+      <div class="bottom-card card-fixacao">
+        <div class="card-title">What affects longevity?</div>
+        <div class="fixacao-item">
+          <div class="fix-icon">🧴</div>
+          <div class="fix-text"><span class="fix-label">Skin type</span>Drier skin retains scent less effectively.</div>
+        </div>
+        <div class="fixacao-item">
+          <div class="fix-icon">🌡️</div>
+          <div class="fix-text"><span class="fix-label">Climate</span>Cold weather boosts longevity; heat reduces it.</div>
+        </div>
+        <div class="fixacao-item">
+          <div class="fix-icon">💧</div>
+          <div class="fix-text"><span class="fix-label">Hydration</span>Moisturised skin holds fragrance much better.</div>
+        </div>
+        <div class="fixacao-item">
+          <div class="fix-icon">✦</div>
+          <div class="fix-text"><span class="fix-label">Application spots</span>Wrists, neck, and behind the ears are the best points.</div>
+        </div>
+      </div>
+
+      <!-- Fragrance Families -->
+      <div class="bottom-card card-olfativas">
+        <div class="card-title">Fragrance Families</div>
+        <div class="olfativa-item">
+          <div class="olf-dot" style="background:#e8a0b0"></div>
+          <div><div class="olf-name">Floral</div><div class="olf-desc">Romantic and feminine</div></div>
+        </div>
+        <div class="olfativa-item">
+          <div class="olf-dot" style="background:#f0d060"></div>
+          <div><div class="olf-name">Citrus</div><div class="olf-desc">Fresh and energising</div></div>
+        </div>
+        <div class="olfativa-item">
+          <div class="olf-dot" style="background:#c08840"></div>
+          <div><div class="olf-name">Oriental</div><div class="olf-desc">Warm and enveloping</div></div>
+        </div>
+        <div class="olfativa-item">
+          <div class="olf-dot" style="background:#805030"></div>
+          <div><div class="olf-name">Woody</div><div class="olf-desc">Elegant and distinctive</div></div>
+        </div>
+        <div class="olfativa-item">
+          <div class="olf-dot" style="background:#80a060"></div>
+          <div><div class="olf-name">Aromatic</div><div class="olf-desc">Herbal and refreshing</div></div>
+        </div>
+      </div>
+
+      <!-- Extra Tip -->
+      <div class="bottom-card card-dica">
+        <div class="card-title">Pro Tip</div>
+        <div class="dica-text">
+          Do not rub your wrists together after applying perfume. This breaks down the fragrance molecules and significantly reduces longevity.
+        </div>
+        <div class="dica-quote">
+          <p>"A perfume is invisible, but unforgettable."</p>
+          <small>— ♥</small>
+        </div>
+      </div>
+
+    </div><!-- /bottom-grid -->
+
+  </div><!-- /infographic -->
+
+  <!-- ══════════════════════════════════════════
+       EROSCORP PRODUCTS
+  ══════════════════════════════════════════ -->
+
+  <!-- FEMININE FRAGRANCES -->
+  <section class="catalog female-section">
     <h2 class="title">Feminine Essences</h2>
-
     <div class="grid">
-
-        <div class="card">
-            <img src="img/afrodite.jpg" alt="Eros Mystery">
-
-            <div class="card-info">
-                <h3>Eros Mystery</h3>
-                <p>Notes: Black Orchid & Truffle</p>
-                <span class="price">$95.00</span>
-            </div>
+      <div class="card">
+        <img src="img/afrodite.jpg" alt="Eros Mystery">
+        <div class="card-info">
+          <h3>Eros Mystery</h3>
+          <p>Notes: Black Orchid & Truffle</p>
+          <span class="price">$ 89.00</span>
         </div>
-
-        <div class="card">
-            <img src="img/hera.jpg" alt="Eros Elixir">
-
-            <div class="card-info">
-                <h3>Eros Elixir</h3>
-                <p>Notes: Honey & Indian Sandalwood</p>
-                <span class="price">$100.00</span>
-            </div>
+      </div>
+      <div class="card">
+        <img src="img/hera.jpg" alt="Eros Elixir">
+        <div class="card-info">
+          <h3>Eros Elixir</h3>
+          <p>Notes: Honey & Indian Sandalwood</p>
+          <span class="price">$ 95.00</span>
         </div>
-
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="catalog male-section">
-
+  <!-- MASCULINE FRAGRANCES -->
+  <section class="catalog male-section">
     <h2 class="title">Masculine Essences</h2>
-
     <div class="grid">
-
-        <div class="card">
-            <img src="img/zeus.jpg" alt="Eros Sultan">
-
-            <div class="card-info">
-                <h3>Eros Sultan</h3>
-                <p>Notes: Royal Oud & Myrrh</p>
-                <span class="price">$105.00</span>
-            </div>
+      <div class="card">
+        <img src="img/zeus.jpg" alt="Eros Sultan">
+        <div class="card-info">
+          <h3>Eros Sultan</h3>
+          <p>Notes: Royal Oud & Myrrh</p>
+          <span class="price">$ 99.00</span>
         </div>
-
-        <div class="card">
-            <img src="img/ares.jpg" alt="Eros Nomad">
-
-            <div class="card-info">
-                <h3>Eros Nomad</h3>
-                <p>Notes: Incense & Dry Tobacco</p>
-                <span class="price">$98.00</span>
-            </div>
+      </div>
+      <div class="card">
+        <img src="img/ares.jpg" alt="Eros Nomad">
+        <div class="card-info">
+          <h3>Eros Nomad</h3>
+          <p>Notes: Incense & Dry Tobacco</p>
+          <span class="price">$ 91.00</span>
         </div>
-
+      </div>
     </div>
+  </section>
 
-</section>
-
-<footer>
+  <!-- ── FOOTER ── -->
+  <footer>
     <p>School Project - ErosCorp © 2026</p>
+    <a href="https://suporte@eroscorp.com.br" target="_blank">support@eroscorp.com</a><br><br>
     <a href="https://instagram.com/eroscorp" target="_blank">@Eroscorp</a>
-</footer>
+  </footer>
 
 </body>
 </html>
