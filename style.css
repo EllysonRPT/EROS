@@ -74,12 +74,14 @@ h2 {
     align-items: center;
     padding: 15px;
     width: 30%;
-     background: rgba(255, 228, 196, 0.95);
+     background: rgba(222, 219, 219, 0.95);
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     transition: 0.5s; 
+    
+    
 }
 
 .card:hover {
@@ -103,10 +105,10 @@ footer {
     text-align: center;
     padding: 20px; 
     font-size: 30px;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 
 footer a {
-    color: rgb(196, 254, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
