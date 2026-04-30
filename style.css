@@ -132,3 +132,398 @@ footer a {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
+
+/* =============================================
+   INFOGRÁFICA — Tipos de Perfume
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* ── Variáveis ── */
+:root {
+  --gold:       #b8922a;
+  --gold-light: #d4a94a;
+  --gold-pale:  #f0e0b0;
+  --cream:      #f5ede0;
+  --cream-dark: #ede0cc;
+  --stone:      #c8b89a;
+  --stone-dark: #9a8060;
+  --text-dark:  #2a1f0e;
+  --text-mid:   #5a4020;
+  --text-light: #8a6840;
+}
+
+.infographic {
+  max-width: 820px;
+  margin: 40px auto;
+  padding: 40px 24px 48px;
+  background: #d4a94a(255, 255, 255, 0.72);
+  backdrop-filter: blur(0,5px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* ── Header da infográfica ── */
+.header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.header-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 6px;
+  color: var(--stone-dark);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+/* Sobrescreve o h1/h2 global apenas dentro de .infographic */
+.infographic h1 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(18px, 5vw, 26px);
+  font-weight: 400;
+  letter-spacing: 10px;
+  color: var(--text-dark);
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 2px;
+}
+
+.infographic h2 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(42px, 12vw, 80px);
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: var(--gold);
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 20px rgba(184, 146, 42, 0.15);
+}
+
+.header-subtitle {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(8px, 2vw, 11px);
+  letter-spacing: 3px;
+  color: var(--stone-dark);
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+
+/* ── Divisor ── */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 18px auto;
+  max-width: 320px;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.divider-diamond {
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  transform: rotate(45deg);
+}
+
+/* ── Cabeçalho da tabela ── */
+.table-header {
+  display: grid;
+  grid-template-columns: 180px 1fr 1fr 1.6fr 1.4fr;
+  gap: 0 12px;
+  padding: 0 16px 10px 16px;
+  border-bottom: 1.5px solid var(--stone);
+  margin-bottom: 10px;
+}
+
+.col-label {
+  font-family: 'Cinzel', serif;
+  font-size: 8.5px;
+  letter-spacing: 3px;
+  color: var(--stone-dark);
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+/* ── Linhas de perfume ── */
+.perfume-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.perfume-row {
+  display: grid;
+  grid-template-columns: 180px 1fr 1fr 1.6fr 1.4fr;
+  gap: 0 12px;
+  align-items: center;
+  padding: 18px 16px;
+  border-radius: 12px;
+  transition: transform 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.perfume-row::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  border-radius: 12px 0 0 12px;
+}
+
+.perfume-row:hover {
+  transform: translateX(3px);
+}
+
+/* Cores por linha */
+.row-parfum          { background: linear-gradient(135deg, #fdf6ec 0%, #f5e8cc 100%); }
+.row-parfum::before  { background: var(--gold); }
+.row-edp             { background: linear-gradient(135deg, #fdf0f0 0%, #f5ddd8 100%); }
+.row-edp::before     { background: #c0806a; }
+.row-edt             { background: linear-gradient(135deg, #f5f0e8 0%, #ede0c0 100%); }
+.row-edt::before     { background: #a89060; }
+.row-edc             { background: linear-gradient(135deg, #f0f5f0 0%, #d8ecd8 100%); }
+.row-edc::before     { background: #6a9a6a; }
+.row-fraiche         { background: linear-gradient(135deg, #f0f4f8 0%, #d0e4f0 100%); }
+.row-fraiche::before { background: #6080a0; }
+
+/* ── Célula de tipo ── */
+.type-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bottle-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+  width: 38px;
+  text-align: center;
+  line-height: 1;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.15));
+}
+
+.type-name {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(12px, 2.5vw, 16px);
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+.type-abbr {
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  color: var(--stone-dark);
+  letter-spacing: 2px;
+  margin-top: 2px;
+}
+
+/* ── Concentração ── */
+.concentration-cell {
+  text-align: center;
+}
+
+.conc-value {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+
+.dots {
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1.5px solid var(--stone);
+}
+
+.dot.filled {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+/* ── Duração ── */
+.duration-cell {
+  text-align: center;
+}
+
+.duration-value {
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.2;
+}
+
+.duration-unit {
+  font-size: 10px;
+  color: var(--stone-dark);
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.clock-icon {
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+/* ── Características e Ideal ── */
+.char-cell,
+.ideal-cell {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--text-mid);
+}
+
+/* ── Cards inferiores ── */
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.bottom-card {
+  border-radius: 12px;
+  padding: 20px 16px;
+}
+
+.card-fixacao   { background: linear-gradient(135deg, #f8f2e8, #ede0c8); }
+.card-olfativas { background: linear-gradient(135deg, #f5f0f8, #e8ddf0); }
+.card-dica      { background: linear-gradient(135deg, #e8f2f8, #d0e4ee); }
+
+.card-title {
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 3.5px;
+  color: var(--stone-dark);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(184, 146, 42, 0.3);
+}
+
+/* Fixação */
+.fixacao-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.fix-icon {
+  font-size: 15px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.fix-text {
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: var(--text-mid);
+}
+
+.fix-label {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-dark);
+  display: block;
+  margin-bottom: 1px;
+}
+
+/* Famílias olfativas */
+.olfativa-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 9px;
+}
+
+.olf-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.olf-name {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.olf-desc {
+  font-size: 11px;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+/* Dica extra */
+.dica-text {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--text-mid);
+  margin-bottom: 16px;
+}
+
+.dica-quote {
+  border-left: 2.5px solid var(--gold);
+  padding-left: 12px;
+  margin-top: 14px;
+}
+
+.dica-quote p {
+  font-style: italic;
+  font-size: 14px;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.dica-quote small {
+  font-size: 10px;
+  color: var(--stone-dark);
+  letter-spacing: 2px;
+}
+
+/* ── Responsivo ── */
+@media (max-width: 600px) {
+  .table-header {
+    grid-template-columns: 130px 1fr 1fr;
+  }
+  .table-header .col-label:nth-child(n+4) {
+    display: none;
+  }
+  .perfume-row {
+    grid-template-columns: 130px 1fr 1fr;
+  }
+  .perfume-row .char-cell,
+  .perfume-row .ideal-cell {
+    display: none;
+  }
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+  .type-name {
+    font-size: 13px;
+  }
+}
