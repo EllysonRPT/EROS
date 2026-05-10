@@ -1,9 +1,9 @@
 # Relatório da Landing Page – Perfume Eros
 
 ## Equipe
-* **Miguel Fernandes Ribeiro** – Líder, organização geral e elaboração do relatório
-* **Design (Estrutura estética da página, organização dos elementos, layout e escolha de imagens):** Felipe dos Santos e Luis Felipe Correa
-* **Desenvolvedores (Desenvolvimento e estruturação do HTML):** Ellyson Parise e Gustavo José
+* **Ellyson Parise Ribeiro** – Líder, organização geral e elaboração do relatório
+* Felipe dos Santos e Luis Felipe Correa - **Design (Estrutura estética da página, organização dos elementos, layout e escolha de imagens):** 
+* Gustavo José - **Desenvolvedores (Desenvolvimento e estruturação do HTML):** 
 
 ---
 
