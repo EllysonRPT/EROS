@@ -35,7 +35,7 @@ body {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #d4af37, #8b5e1a);
+    background: linear-gradient(135deg, #000000, #000000);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +54,7 @@ body {
 
 .logo-text span {
     font-size: 0.75rem;
-    color: #c7b27a;
+    color: #faf9f5;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -82,7 +82,7 @@ body {
 }
 
 .menu-links .nav-link:hover {
-    color: #d4af37;
+    color: #f0db67;
 }
 
 .menu-links .nav-link:hover::after {
@@ -635,3 +635,26 @@ footer a {
     font-size: 13px;
   } 
 } 
+.logo-area{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo-icon img{
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.logo-text h1{
+    margin: 0;
+    font-size: 24px;
+    color: gold;
+}
+
+.logo-text span{
+    font-size: 12px;
+    color: #d4c28a;
+}
