@@ -393,16 +393,16 @@ footer a {
 }
 
 /* Cores por linha */
-.row-parfum          { background: linear-gradient(135deg, #fdf6ec 0%, #f5e8cc 100%); }
+.row-parfum          { background: linear-gradient(135deg, #ffffff 0%, #ede0c0 100%); }
 .row-parfum::before  { background: var(--gold); }
-.row-edp             { background: linear-gradient(135deg, #fdf0f0 0%, #f5ddd8 100%); }
-.row-edp::before     { background: #c0806a; }
-.row-edt             { background: linear-gradient(135deg, #f5f0e8 0%, #ede0c0 100%); }
-.row-edt::before     { background: #a89060; }
-.row-edc             { background: linear-gradient(135deg, #f0f5f0 0%, #d8ecd8 100%); }
-.row-edc::before     { background: #6a9a6a; }
-.row-fraiche         { background: linear-gradient(135deg, #f0f4f8 0%, #d0e4f0 100%); }
-.row-fraiche::before { background: #6080a0; }
+.row-edp             { background: linear-gradient(135deg, #ffffff 0%, #ede0c0 100%); }
+.row-edp::before     { background: var(--gold); }
+.row-edt             { background: linear-gradient(135deg, #ffffff 0%, #ede0c0 100%); }
+.row-edt::before     { background: var(--gold); }
+.row-edc             { background: linear-gradient(135deg, #ffffff 0%, #ede0c0 100%); }
+.row-edc::before     { background: var(--gold); }
+.row-fraiche         { background: linear-gradient(135deg, #ffffff 0%, #ede0c0 100%); } 
+.row-fraiche::before { background: var(--gold); }
 
 /* ── Célula de tipo ── */
 .type-cell {
@@ -514,8 +514,8 @@ footer a {
 }
 
 .card-fixacao   { background: linear-gradient(135deg, #f8f2e8, #ede0c8); }
-.card-olfativas { background: linear-gradient(135deg, #f5f0f8, #e8ddf0); }
-.card-dica      { background: linear-gradient(135deg, #e8f2f8, #d0e4ee); }
+.card-olfativas { background: linear-gradient(135deg, #f8f2e8, #ede0c8); }
+.card-dica      { background: linear-gradient(135deg, #f8f2e8, #ede0c8); }
 
 .card-title {
   font-family: 'Cinzel', serif;
@@ -563,7 +563,7 @@ footer a {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 9px;
+  margin-bottom: 9px; 
 }
 
 .olf-dot {
@@ -633,5 +633,5 @@ footer a {
   }
   .type-name {
     font-size: 13px;
-  }
-}
+  } 
+} 
