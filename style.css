@@ -177,7 +177,7 @@ body {
 
 h2 {
     font-family: 'Cinzel', serif;
-    color: bisque;
+    color: rgb(70, 49, 11);
     font-size: 30px;
     text-align: center;
 }
@@ -190,12 +190,13 @@ h2 {
     align-items: center;
     padding: 15px;
     width: 30%;
-     background: rgba(222, 219, 219, 0.95);
+     background: rgba(239, 215, 187, 0.822);
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     transition: 0.5s; 
+    backdrop-filter: blur(1px);
     
     
 }
@@ -645,4 +646,128 @@ footer a {
 .logo-text span{
     font-size: 12px;
     color: #d4c28a;
+} 
+
+/* Container Grid Responsivo */
+.eros-reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Card Base (Glassmorphism) */
+.eros-review-card {
+  --glass-bg: rgba(70, 49, 11, 0.721);
+  --glass-border: rgba(212, 35, 35, 0.08);
+  --glass-hover: rgba(255, 255, 255, 0.07);
+  --gold: #d4af37;
+  --text-main: #f0f0f5;
+  --text-muted: #a0a0b0;
+  --verified-green: #4ade80;
+
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  color: var(--text-main);
+  font-family: system-ui, -apple-system, sans-serif;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.eros-review-card:hover {
+  background: var(--glass-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(212, 175, 55, 0.12);
+  border-color: rgba(212, 175, 55, 0.25);
+}
+
+/* Topo do Card (Avatar + Info) */
+.eros-card-top {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.eros-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  overflow: hidden;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.eros-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.eros-rating-date {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.eros-stars {
+  color: var(--gold);
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+.eros-date {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  opacity: 0.8;
+}
+
+/* Comentário */
+.eros-comment {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: #e5e5ea;
+}
+
+/* Rodapé do Card */
+.eros-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 0.7rem;
+}
+
+.eros-author {
+  font-weight: 600;
+  color: var(--gold);
+  font-size: 0.9rem;
+}
+
+.eros-verified {
+  font-size: 0.7rem;
+  color: var(--verified-green);
+  background: rgba(74, 222, 128, 0.1);
+  padding: 0.2rem 0.45rem;
+  border-radius: 6px;
+  border: 1px solid rgba(74, 222, 128, 0.2);
+  font-weight: 500;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .eros-reviews-container { grid-template-columns: 1fr; gap: 1.2rem; }
+  .eros-review-card { padding: 1.2rem; }
+  .eros-avatar { width: 42px; height: 42px; }
 }
