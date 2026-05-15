@@ -779,8 +779,8 @@ footer a {
 .footer {
     background-color: var(--dark-bg);
     color: #fff;
-    padding: 30px 0 15px 0; /* Altura reduzida */
-    font-family: 'Cinzel', serif; /* Mantendo o estilo clássico */
+    padding: 20px 0 10px 0; /* Altura reduzida ao máximo */
+    font-family: 'Cinzel', serif;
     border-top: 1px solid rgba(197, 160, 89, 0.2);
 }
 
@@ -789,7 +789,7 @@ footer a {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Alinha ao topo para controle preciso dos gaps */
+    align-items: center; /* Alinha os blocos horizontalmente no centro para economizar altura */
     padding: 0 20px;
 }
 
@@ -797,35 +797,36 @@ footer a {
 .footer-left {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espaçamento entre Marca e Suporte */
+    gap: 8px; /* Espaço reduzido */
 }
 
 .footer-logo {
     color: var(--gold);
     letter-spacing: 3px;
-    font-size: 1.3rem;
+    font-size: 1.4rem; /* Letra maior */
     margin: 0;
     line-height: 1;
 }
 
 .footer-slogan {
-    font-size: 0.6rem;
+    font-size: 0.65rem; /* Letra ligeiramente maior */
     letter-spacing: 1.5px;
     color: #666;
-    margin: 5px 0 0 0;
+    margin: 4px 0 0 0;
     text-transform: uppercase;
 }
 
 .support-nav {
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 .support-nav a {
     color: #a0a0a0;
     text-decoration: none;
-    font-size: 0.75rem;
+    font-size: 0.9rem; /* Letra maior para destacar o e-mail/arroba */
     transition: 0.3s;
+    letter-spacing: 0.5px;
 }
 
 .support-nav a:hover {
@@ -835,9 +836,14 @@ footer a {
 /* Lado Direito */
 .footer-right {
     display: flex;
+    align-items: center; /* Coloca a newsletter e as redes sociais lado a lado para achatar a altura */
+    gap: 25px;
+}
+
+.newsletter-block {
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 5px; /* Gap menor para comportar a mini explicação */
 }
 
 .newsletter-form {
@@ -849,7 +855,7 @@ footer a {
     border: 1px solid #222;
     padding: 8px 12px;
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 0.85rem; /* Letra do input maior */
     width: 200px;
 }
 
@@ -858,7 +864,7 @@ footer a {
     border: none;
     padding: 0 15px;
     cursor: pointer;
-    font-size: 0.7rem;
+    font-size: 0.8rem; /* Letra do botão maior */
     font-weight: bold;
     color: #000;
     transition: 0.3s;
@@ -871,15 +877,14 @@ footer a {
 .newsletter-tip {
     font-size: 0.65rem;
     color: #555;
-    margin: 2px 0 8px 0;
+    margin: 4px 0 0 0; /* Ajustado margem */
     font-style: italic;
     letter-spacing: 0.5px;
 }
 
 .social-links a {
     color: var(--gold);
-    margin-left: 12px;
-    font-size: 1rem;
+    font-size: 1.1rem; /* Ícones sociais levemente maiores */
     transition: 0.3s;
 }
 
@@ -890,28 +895,31 @@ footer a {
 /* Rodapé Final */
 .footer-bottom {
     text-align: center;
-    margin-top: 25px;
-    padding-top: 15px;
+    margin-top: 15px; /* Reduzido de 25px para 15px */
+    padding-top: 10px;
     font-size: 0.65rem;
     color: #333;
     border-top: 1px solid #161616;
 }
 
 /* Ajuste Responsivo */
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 30px;
+        gap: 20px;
     }
     .footer-right {
+        flex-direction: column-reverse; /* Inverte para os ícones ficarem bem posicionados no mobile */
+        align-items: center;
+        gap: 15px;
+    }
+    .newsletter-block {
         align-items: center;
     }
-    .newsletter-tip {
-        text-align: center;
-    }
-    .social-links a {
-        margin: 0 10px;
+    .support-nav {
+        flex-direction: column;
+        gap: 8px;
     }
 }
