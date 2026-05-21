@@ -167,6 +167,16 @@
           <div class="card-hint">Clique para detalhes ✦</div>
         </div>
 
+        <div class="card perf-card-clickable" onclick="abrirModal('athena')">
+          <img src="img/atena.png" alt="Athena's Wisdom">
+          <div class="card-info">
+            <h3>Athena's Wisdom</h3>
+            <p>Notas: Oliva Sagrada &amp; Íris Grega</p>
+            <span class="price">R$ 529,00</span>
+          </div>
+          <div class="card-hint">Clique para detalhes ✦</div>
+        </div>
+
       </div>
     </section>
 
@@ -190,6 +200,16 @@
             <h3>Hades' Depth</h3>
             <p>Notas: Incenso &amp; Tabaco Seco</p>
             <span class="price">R$ 495,00</span>
+          </div>
+          <div class="card-hint">Clique para detalhes ✦</div>
+        </div>
+
+        <div class="card perf-card-clickable" onclick="abrirModal('apolo')">
+          <img src="img/apolo.png" alt="Apolo's Light">
+          <div class="card-info">
+            <h3>Apolo's Light</h3>
+            <p>Notas: Cedro Solar &amp; Bergamota Áurea</p>
+            <span class="price">R$ 549,00</span>
           </div>
           <div class="card-hint">Clique para detalhes ✦</div>
         </div>
@@ -330,6 +350,72 @@
         <div class="perf-familia"><div class="perf-familia-dot" style="background:#805030"></div><span>Aromática Amadeirada</span></div>
         <div class="perf-desc">Inspirado em Ares, deus da guerra e da bravura. O incenso e o tabaco seco criam uma trilha seca e misteriosa, evocando força e aventura. Perfeito para o uso diário e ambientes ao ar livre.</div>
         <div class="perf-modal-preco">R$ 495,00</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Athena's Wisdom -->
+  <div class="perf-modal-overlay" id="modal-athena">
+    <div class="perf-modal">
+      <button class="perf-modal-close" onclick="fecharModal('athena')">✕</button>
+      <div class="perf-modal-header fem-header">
+        <div class="perf-modal-emoji">🦉</div>
+        <div>
+          <div class="perf-modal-nome">Athena's Wisdom</div>
+          <div class="perf-modal-sub">Feminino · Majestoso · Inspirado em Atena</div>
+          <div class="perf-modal-badge fem-badge">Feminino</div>
+        </div>
+      </div>
+      <div class="perf-modal-body">
+        <div class="perf-modal-grid4">
+          <div class="perf-field"><div class="perf-field-label">Tipo</div><div class="perf-field-value">Eau de Parfum</div></div>
+          <div class="perf-field"><div class="perf-field-label">Volume</div><div class="perf-field-value">100 ml</div></div>
+          <div class="perf-field"><div class="perf-field-label">Concentração</div><div class="perf-field-value">19%</div></div>
+          <div class="perf-field"><div class="perf-field-label">Fixação</div><div class="perf-field-value">7–9 h</div></div>
+        </div>
+        <div class="perf-section-label">Notas Aromáticas</div>
+        <div class="perf-notes">
+          <div class="perf-note"><div class="perf-note-dot" style="background:#c0a0e0"></div><span class="perf-note-label">Saída</span><span class="perf-note-value">Bergamota &amp; Violeta</span></div>
+          <div class="perf-note"><div class="perf-note-dot" style="background:#8060b0"></div><span class="perf-note-label">Coração</span><span class="perf-note-value">Oliva Sagrada &amp; Íris Grega</span></div>
+          <div class="perf-note"><div class="perf-note-dot" style="background:#503080"></div><span class="perf-note-label">Fundo</span><span class="perf-note-value">Sândalo Branco &amp; Almíscar</span></div>
+        </div>
+        <div class="perf-section-label">Família Olfativa</div>
+        <div class="perf-familia"><div class="perf-familia-dot" style="background:#8060b0"></div><span>Floral Almiscarado</span></div>
+        <div class="perf-desc">Inspirado em Atena, deusa da sabedoria, coragem e justiça. A oliva sagrada e a íris grega evocam a serenidade e o poder da deusa guerreira, com um sillage elegante e intemporal — para mulheres que lideram com graça.</div>
+        <div class="perf-modal-preco">R$ 529,00</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Apolo's Light -->
+  <div class="perf-modal-overlay" id="modal-apolo">
+    <div class="perf-modal">
+      <button class="perf-modal-close" onclick="fecharModal('apolo')">✕</button>
+      <div class="perf-modal-header masc-header">
+        <div class="perf-modal-emoji">☀️</div>
+        <div>
+          <div class="perf-modal-nome">Apolo's Light</div>
+          <div class="perf-modal-sub">Masculino · Radiante · Inspirado em Apolo</div>
+          <div class="perf-modal-badge masc-badge">Masculino</div>
+        </div>
+      </div>
+      <div class="perf-modal-body">
+        <div class="perf-modal-grid4">
+          <div class="perf-field"><div class="perf-field-label">Tipo</div><div class="perf-field-value">Eau de Parfum</div></div>
+          <div class="perf-field"><div class="perf-field-label">Volume</div><div class="perf-field-value">100 ml</div></div>
+          <div class="perf-field"><div class="perf-field-label">Concentração</div><div class="perf-field-value">20%</div></div>
+          <div class="perf-field"><div class="perf-field-label">Fixação</div><div class="perf-field-value">8–10 h</div></div>
+        </div>
+        <div class="perf-section-label">Notas Aromáticas</div>
+        <div class="perf-notes">
+          <div class="perf-note"><div class="perf-note-dot" style="background:#f0c840"></div><span class="perf-note-label">Saída</span><span class="perf-note-value">Bergamota Áurea &amp; Limão Siciliano</span></div>
+          <div class="perf-note"><div class="perf-note-dot" style="background:#c89020"></div><span class="perf-note-label">Coração</span><span class="perf-note-value">Cedro Solar &amp; Loureiro Grego</span></div>
+          <div class="perf-note"><div class="perf-note-dot" style="background:#805010"></div><span class="perf-note-label">Fundo</span><span class="perf-note-value">Âmbar Dourado &amp; Vetiver</span></div>
+        </div>
+        <div class="perf-section-label">Família Olfativa</div>
+        <div class="perf-familia"><div class="perf-familia-dot" style="background:#c89020"></div><span>Cítrico Amadeirado</span></div>
+        <div class="perf-desc">Inspirado em Apolo, deus da luz, arte e harmonia. A bergamota áurea e o cedro solar criam uma abertura luminosa e vibrante, evoluindo para uma base quente e sofisticada. Para o homem que ilumina cada ambiente que entra.</div>
+        <div class="perf-modal-preco">R$ 549,00</div>
       </div>
     </div>
   </div>

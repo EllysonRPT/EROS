@@ -57,7 +57,7 @@
        BANNER
   ═══════════════════════════════════════ -->
   <div class="banner-topo">
-    <img src="img/bannerEN.jpeg" alt="ErosCorp Banner">
+    <img src="img/bannerEN.png" alt="ErosCorp Banner">
   </div>
 
   <!-- ═══════════════════════════════════════
@@ -209,6 +209,16 @@
           <div class="card-hint">Click for details ✦</div>
         </div>
 
+        <div class="card perf-card-clickable" onclick="abrirModal('athena')">
+          <img src="img/atena.png" alt="Athena's Wisdom">
+          <div class="card-info">
+            <h3>Athena's Wisdom</h3>
+            <p>Notes: Sacred Olive &amp; Greek Iris</p>
+            <span class="price">$97.00</span>
+          </div>
+          <div class="card-hint">Click for details ✦</div>
+        </div>
+
       </div>
     </section>
 
@@ -233,6 +243,16 @@
             <h3>Eros Nomad</h3>
             <p>Notes: Incense &amp; Dry Tobacco</p>
             <span class="price">$91.00</span>
+          </div>
+          <div class="card-hint">Click for details ✦</div>
+        </div>
+
+        <div class="card perf-card-clickable" onclick="abrirModal('apolo')">
+          <img src="img/apolo.png" alt="Apolo's Light">
+          <div class="card-info">
+            <h3>Apolo's Light</h3>
+            <p>Notes: Solar Cedar &amp; Golden Bergamot</p>
+            <span class="price">$101.00</span>
           </div>
           <div class="card-hint">Click for details ✦</div>
         </div>
@@ -375,6 +395,72 @@
         <div class="perf-familia"><div class="perf-familia-dot" style="background:#805030"></div><span>Aromatic Woody</span></div>
         <div class="perf-desc">Inspired by Ares, god of war and courage. Incense and dry tobacco create a dry, mysterious trail evoking strength and adventure. Perfect for daily use and outdoor environments.</div>
         <div class="perf-modal-preco">$91.00</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Athena's Wisdom -->
+  <div class="perf-modal-overlay" id="modal-athena">
+    <div class="perf-modal">
+      <button class="perf-modal-close" onclick="fecharModal('athena')">✕</button>
+      <div class="perf-modal-header fem-header">
+        <div class="perf-modal-emoji">🦉</div>
+        <div>
+          <div class="perf-modal-nome">Athena's Wisdom</div>
+          <div class="perf-modal-sub">Female · Majestic · Inspired by Athena</div>
+          <div class="perf-modal-badge fem-badge">Female</div>
+        </div>
+      </div>
+      <div class="perf-modal-body">
+        <div class="perf-modal-grid4">
+          <div class="perf-field"><div class="perf-field-label">Type</div><div class="perf-field-value">Eau de Parfum</div></div>
+          <div class="perf-field"><div class="perf-field-label">Volume</div><div class="perf-field-value">100 ml</div></div>
+          <div class="perf-field"><div class="perf-field-label">Concentration</div><div class="perf-field-value">19%</div></div>
+          <div class="perf-field"><div class="perf-field-label">Longevity</div><div class="perf-field-value">7–9 h</div></div>
+        </div>
+        <div class="perf-section-label">Aromatic Notes</div>
+        <div class="perf-notes">
+          <div class="perf-note"><div class="perf-note-dot" style="background:#c0a0e0"></div><span class="perf-note-label">Top</span><span class="perf-note-value">Bergamot &amp; Violet</span></div>
+          <div class="perf-note"><div class="perf-note-dot" style="background:#8060b0"></div><span class="perf-note-label">Heart</span><span class="perf-note-value">Sacred Olive &amp; Greek Iris</span></div>
+          <div class="perf-note"><div class="perf-note-dot" style="background:#503080"></div><span class="perf-note-label">Base</span><span class="perf-note-value">White Sandalwood &amp; Musk</span></div>
+        </div>
+        <div class="perf-section-label">Fragrance Family</div>
+        <div class="perf-familia"><div class="perf-familia-dot" style="background:#8060b0"></div><span>Floral Musky</span></div>
+        <div class="perf-desc">Inspired by Athena, goddess of wisdom, courage and justice. Sacred olive and Greek iris evoke the serenity and power of the warrior goddess, with an elegant and timeless sillage — for women who lead with grace.</div>
+        <div class="perf-modal-preco">$97.00</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Apolo's Light -->
+  <div class="perf-modal-overlay" id="modal-apolo">
+    <div class="perf-modal">
+      <button class="perf-modal-close" onclick="fecharModal('apolo')">✕</button>
+      <div class="perf-modal-header masc-header">
+        <div class="perf-modal-emoji">☀️</div>
+        <div>
+          <div class="perf-modal-nome">Apolo's Light</div>
+          <div class="perf-modal-sub">Male · Radiant · Inspired by Apollo</div>
+          <div class="perf-modal-badge masc-badge">Male</div>
+        </div>
+      </div>
+      <div class="perf-modal-body">
+        <div class="perf-modal-grid4">
+          <div class="perf-field"><div class="perf-field-label">Type</div><div class="perf-field-value">Eau de Parfum</div></div>
+          <div class="perf-field"><div class="perf-field-label">Volume</div><div class="perf-field-value">100 ml</div></div>
+          <div class="perf-field"><div class="perf-field-label">Concentration</div><div class="perf-field-value">20%</div></div>
+          <div class="perf-field"><div class="perf-field-label">Longevity</div><div class="perf-field-value">8–10 h</div></div>
+        </div>
+        <div class="perf-section-label">Aromatic Notes</div>
+        <div class="perf-notes">
+          <div class="perf-note"><div class="perf-note-dot" style="background:#f0c840"></div><span class="perf-note-label">Top</span><span class="perf-note-value">Golden Bergamot &amp; Sicilian Lemon</span></div>
+          <div class="perf-note"><div class="perf-note-dot" style="background:#c89020"></div><span class="perf-note-label">Heart</span><span class="perf-note-value">Solar Cedar &amp; Greek Laurel</span></div>
+          <div class="perf-note"><div class="perf-note-dot" style="background:#805010"></div><span class="perf-note-label">Base</span><span class="perf-note-value">Golden Amber &amp; Vetiver</span></div>
+        </div>
+        <div class="perf-section-label">Fragrance Family</div>
+        <div class="perf-familia"><div class="perf-familia-dot" style="background:#c89020"></div><span>Citrus Woody</span></div>
+        <div class="perf-desc">Inspired by Apollo, god of light, art and harmony. Golden bergamot and solar cedar open with luminous vibrancy, evolving into a warm and sophisticated base. For the man who illuminates every room he enters.</div>
+        <div class="perf-modal-preco">$101.00</div>
       </div>
     </div>
   </div>
