@@ -51,3 +51,7 @@ Nosso objetivo é causar prazer e segurança. Ao usar nossos perfumes, o cliente
 * **Trello** – Gerenciamento de tarefas
 * **GitHub** – Versionamento e hospedagem
 * **Discord** – Reuniões, alinhamento e comunicação
+
+
+## Link do projeto
+https://ellysonrpt.github.io/EROS/
